@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido</h1>
+    <p>
+        <a class="btn btn-primary" asp-controller="Distribuidor" asp-action="Index">Ver Distribuidores</a>
+    </p>
+    <p>
+        <a href="@Url.Action("Tabs", "Distribuidor")" class="btn btn-primary">Ver Información de Distribuidores</a>
+    </p>
+
+</div>

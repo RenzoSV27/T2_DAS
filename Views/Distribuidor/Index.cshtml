@@ -1,0 +1,40 @@
+﻿@model IEnumerable<T2_Salazar_Renzo.Models.Distribuidor>
+
+@{
+    ViewData["Title"] = "Distribuidores";
+}
+
+<h2>Distribuidores</h2>
+
+<p>
+    <a asp-action="Create">Crear Nuevo Distribuidor</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre Distribuidor</th>
+            <th>Razón Social</th>
+            <th>Teléfono</th>
+            <th>Año de Inicio</th>
+            <th>Contacto</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NombreDistribuidor</td>
+                <td>@item.RazonSocial</td>
+                <td>@item.Telefono</td>
+                <td>@item.AnioInicioOperacion</td>
+                <td>@item.Contacto</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

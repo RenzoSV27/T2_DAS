@@ -1,0 +1,52 @@
+﻿@model T2_Salazar_Renzo.Models.Distribuidor
+
+@{
+    ViewData["Title"] = "Eliminar Distribuidor";
+}
+
+<h2>Eliminar Distribuidor</h2>
+
+<h3>¿Estás seguro que quieres eliminar este distribuidor?</h3>
+<div>
+    <h4>Distribuidor</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Nombre Distribuidor
+        </dt>
+        <dd class="col-sm-10">
+            @Model.NombreDistribuidor
+        </dd>
+        <dt class="col-sm-2">
+            Razón Social
+        </dt>
+        <dd class="col-sm-10">
+            @Model.RazonSocial
+        </dd>
+        <dt class="col-sm-2">
+            Teléfono
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Telefono
+        </dd>
+        <dt class="col-sm-2">
+            Año de Inicio de Operación
+        </dt>
+        <dd class="col-sm-10">
+            @Model.AnioInicioOperacion
+        </dd>
+        <dt class="col-sm-2">
+            Contacto
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Contacto
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+

@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Distribuidores en el Perú y el Mundo";
+}
+
+<h2>Distribuidores Conocidos en el Perú y el Mundo</h2>
+
+<!-- Pestañas (Tabs) de Bootstrap -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="peru-tab" data-bs-toggle="tab" href="#peru" role="tab" aria-controls="peru" aria-selected="true">Distribuidores en Perú</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="mundo-tab" data-bs-toggle="tab" href="#mundo" role="tab" aria-controls="mundo" aria-selected="false">Distribuidores en el Mundo</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="video-tab" data-bs-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">Videos Informativos</a>
+    </li>
+</ul>
+
+<!-- Contenido de cada pestaña -->
+<div class="tab-content" id="myTabContent">
+    <!-- Contenido de la pestaña 1: Distribuidores en Perú -->
+    <div class="tab-pane fade show active" id="peru" role="tabpanel" aria-labelledby="peru-tab">
+        <h3>Distribuidores Conocidos en Perú</h3>
+        <p>Aquí están algunos de los distribuidores más importantes de Perú:</p>
+        <ul>
+            <li><strong>Distribuidor A</strong> - Distribuye productos electrónicos a nivel nacional.</li>
+            <li><strong>Distribuidor B</strong> - Principal distribuidor de productos de consumo masivo.</li>
+            <li><strong>Distribuidor C</strong> - Especializado en distribución de productos agrícolas.</li>
+        </ul>
+        <img src="https://via.placeholder.com/600x300" alt="Imagen de Distribuidores en Perú" class="img-fluid" />
+    </div>
+
+    <!-- Contenido de la pestaña 2: Distribuidores en el Mundo -->
+    <div class="tab-pane fade" id="mundo" role="tabpanel" aria-labelledby="mundo-tab">
+        <h3>Distribuidores Conocidos en el Mundo</h3>
+        <p>Algunos de los distribuidores más importantes a nivel mundial son:</p>
+        <ul>
+            <li><strong>Distribuidor Global A</strong> - Opera en más de 50 países con productos de alta tecnología.</li>
+            <li><strong>Distribuidor Global B</strong> - Distribuye productos de consumo a nivel global.</li>
+            <li><strong>Distribuidor Global C</strong> - Líder en distribución de maquinaria pesada.</li>
+        </ul>
+        <img src="https://via.placeholder.com/600x300" alt="Imagen de Distribuidores en el Mundo" class="img-fluid" />
+    </div>
+
+    <!-- Contenido de la pestaña 3: Videos -->
+    <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+        <h3>Videos Informativos sobre Distribuidores</h3>
+        <p>A continuación, te presentamos algunos videos sobre cómo operan los distribuidores a nivel mundial:</p>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoID" allowfullscreen></iframe>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9 mt-3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoID2" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

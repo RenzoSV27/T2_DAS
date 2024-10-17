@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\T2_Salazar_Renzo.props" />
+</Project>
